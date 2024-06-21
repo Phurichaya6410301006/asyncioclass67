@@ -15,5 +15,5 @@ thread = Thread(target=task, args=(1.5, 'New message from another thread'))
 thread.start()
 # wait for the thread to finish
 print(f'{ctime()} Waiting for the thread...')
-thread. Join()
-thread. Join
+thread.join()
+thread.join()
