@@ -75,8 +75,7 @@ async def main():
     print('\n')
     print(f"\n{time.ctime()} - >>>>>>>> Nearly to finished...")
     PourJuice()
-
-##########################################################################################################
+#############
 
 if __name__ == "__main__":
     start_cooking = time.perf_counter()  ## start time
