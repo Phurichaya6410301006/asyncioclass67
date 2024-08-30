@@ -10,7 +10,7 @@ async def producer(queue):
         # generate a value
         value = i
         # block to simulate work
-        sleeptime = random()
+        sleeptime = 1.5
         print(f"> Producer {value} sleep {sleeptime}")
         await asyncio.sleep(sleeptime)
         # add to the queue
@@ -43,7 +43,7 @@ async def consumer(queue):
 # entry point coroutine
 async def main():
     # create the shared queue
-    queue = asyncio.Queue()
+    queue = asyncio.Queue(0)
     # run the producer and consumers
     await asyncio.gather(producer(queue), consumer(queue))
  
